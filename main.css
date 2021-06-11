@@ -1,0 +1,18 @@
+#test {
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+  position: relative;
+}
+
+h1 {
+  font-size: 56px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  color: rgb(1, 44, 44);
+}
+
+h2 {
+  color: #209ba4;
+  color: #33cdd8
+}
