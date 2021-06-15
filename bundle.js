@@ -27,13 +27,13 @@ function renderMap(stateData) {
       popupTemplate: function (geography, data) {
         return `<div class="hoverinfo"> <strong>` + geography.properties.name + `</strong><br/> 
 
-        Median household income: $` + data.median_household_income + ` <br/>
+        <p>Median household income: $` + data.median_household_income + ` </p>
 
-        Share of population in metro areas: ` + (data.share_population_in_metro_areas * 100).toFixed(1) + `% <br/>
+        <p>Share of population in metro areas: ` + (data.share_population_in_metro_areas * 100).toFixed(1) + `% </p>
 
-        Share of population with a high school degree: ` + (data.share_population_with_high_school_degree * 100).toFixed(1) + `% <br/>
+        <p>Share of population with a high school degree: ` + (data.share_population_with_high_school_degree * 100).toFixed(1) + `% </p>
 
-        Share of population unemployed seasonally: ` + (data.share_unemployed_seasonal * 100).toFixed(1) + `% `;
+        <p>Share of population unemployed seasonally: ` + (data.share_unemployed_seasonal * 100).toFixed(1) + `% </p>`;
       },
       highlightBorderWidth: 3
     },
