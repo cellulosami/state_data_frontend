@@ -32,8 +32,10 @@ function renderMap(stateData) {
       highlightFillColor: '#33cdd8',
       popupTemplate: function (geography, data) {
         return `<div class="hoverinfo"> <strong>` + geography.properties.name + `</strong><br/> 
-        Electoral Votes: ` + data.state + ` <br/>
-        Median Household Income: `;
+        Median household income: $` + data.median_household_income + ` <br/>
+        Share of population in metro areas: ` + (data.share_population_in_metro_areas * 100).toFixed(1) + `% <br/>
+        Share of population with a high school degree: ` + (data.share_population_with_high_school_degree * 100).toFixed(1) + `% <br/>
+        Share of population unemployed seasonally: ` + (data.share_unemployed_seasonal * 100).toFixed(1) + `% `;
       },
       highlightBorderWidth: 3
     },
